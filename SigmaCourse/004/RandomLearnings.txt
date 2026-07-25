@@ -1,0 +1,4 @@
+Use Alt and mouse to get multiple cursors - VS Code Specific
+Alt Shift Down replicates the selected lines below - VS Code Specific
+Use target="_blank" for the hyperlink to open in the new page
+loremXY (XY being any number) produces a paragraph with XY words - Emmet Feature can be enabled in any IDE
