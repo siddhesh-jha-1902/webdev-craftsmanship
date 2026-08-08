@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Forms</title>
+</head>
+
+<body>
+  <form action="post">
+
+    <!-- TITLE -->
+
+    <h1>XYZ Technologies</h1>
+    <h2>Form Application</h2>
+
+
+    <!-- PERSONAL INFO -->
+
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <div>
+        <label for="fullName">Full Name: </label>
+        <input type="text" id="fullName" name="fullName" placeholder="Enter your FULL Name" required>
+      </div>
+
+      <div>
+        <label for="email">E-mail: </label>
+        <input type="email" id="email" name="email" placeholder="Enter best your E-mail" pattern=".+@.+\..+" required>
+
+      </div>
+
+      <div>
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password" placeholder="Create a Password" required>
+      </div>
+
+      <div>
+        <label for="confirmPassword">Confirm Password: </label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Retype your password" required>
+      </div>
+
+      <div>
+        <label for="contactNo">Phone No.:</label>
+        <input type="tel" id="contactNo" name="contactNo" placeholder="XXXXX-XXXXX" pattern="[0-9]{10}" required>
+      </div>
+
+      <div>
+        <label for="dob">Date of Birth: </label>
+        <input type="date" id="dob" name="dob" min="1980-01-01" max="2010-12-31" required>
+      </div>
+
+      <div>
+        <label>Gender: </label>
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label>
+        <input type="radio" id="others" name="gender">
+        <label for="others">Others</label>
+      </div>
+
+    </fieldset>
+
+    <br>
+
+    <!-- APPLICATION INFO -->
+
+    <fieldset>
+      <legend>Job Description</legend>
+
+      <div>
+        <label for="department">Department: </label>
+        <select name="department" id="department">
+          <option value="">---Select Department/Role---</option>
+          <option value="hr">HR</option>
+          <option value="projectManager">Project Manager</option>
+          <option value="frontendDeveloper">Frontend Developer</option>
+          <option value="backendDeveloper">Backend Developer</option>
+          <option value="tester">Tester</option>
+          <option value="databaseAdministrator">Database Administrator</option>
+          <option value="intern">Intern</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Work Preference: </label>
+        <input type="radio" id="remote" name="work" value="remote">
+        <label for="remote">Remote</label>
+        <input type="radio" id="hybrid" name="work" value="hybrid">
+        <label for="hybrid">Hybrid</label>
+        <input type="radio" id="onSite" name="work" value="onSite">
+        <label for="onSite">On-Site</label>
+      </div>
+
+      <div>
+        <label>Skills: </label>
+        <input type="checkbox" name="skills" id="html" value="html">
+        <label for="html">HTML</label>
+        <input type="checkbox" name="skills" id="css" value="css">
+        <label for="css">CSS</label>
+        <input type="checkbox" name="skills" id="js" value="javascript">
+        <label for="js">Javascript</label>
+        <input type="checkbox" name="skills" id="python" value="python">
+        <label for="python">Python</label>
+        <input type="checkbox" name="skills" id="java" value="java">
+        <label for="java">Java</label>
+        <input type="checkbox" name="skills" id="go" value="go">
+        <label for="go">Go Lang</label>
+        <input type="checkbox" name="skills" id="fFramework" value="frontendFramework">
+        <label for="fFramework">Frontend Framework</label>
+        <input type="checkbox" name="skills" id="bFramework" value="backendFramework">
+        <label for="bFramework">Backend Framework</label>
+      </div>
+
+      <div>
+        <label for="experience">Years of Experience: </label>
+        <input type="number" id="experience" name="experience" placeholder="e.g. 2" min="0" max="50" required>
+      </div>
+
+      <div>
+        <label for="workHours">Max working hours per day: </label>
+        <input type="range" id="workHours" name="workHours" value="2" min="0" max="10" required>
+      </div>
+
+      <div>
+        <label for="portfolio">Portfolio: </label>
+        <input type="url" id="portfolio" name="portfolio" placeholder="https://example.com">
+      </div>
+
+      <div>
+        <label for="resume">Upload Resume: </label>
+        <input type="file" name="resume" id="resume" accept=".pdf, .doc, .docx" required>
+      </div>
+
+      <div>
+        <label for="certs">Upload Certificates: </label>
+        <input type="file" name="certs" id="certs" accept=".pdf, .doc, .docx, image/*" multiple>
+      </div>
+
+      <div>
+        <label for="CL">Cover Letter: </label> <br>
+        <textarea name="coverLetter" id="CL" placeholder="Tell us why you want to join XYZ Technologies..." rows="8"
+          cols="50"></textarea>
+      </div>
+
+    </fieldset>
+
+    <br>
+
+    <!-- TERMS & CONDITIONS -->
+
+    <div>
+      <input type="checkbox" id="terms" name="terms" required>
+      <label for="terms">I agree to the terms and conditions of XYZ Technologies</label>
+    </div>
+
+    <!-- BUTTONS -->
+
+    <div>
+      <button type="submit">SUBMIT APPLICATION</button>
+      <button type="reset">RESET</button>
+    </div>
+
+  </form>
+</body>
+
+</html>
